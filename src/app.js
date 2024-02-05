@@ -8,8 +8,8 @@ require('dotenv').config();
 
 // Configuracion Middleware con el Servidor de Autorización 
 const autenticacion = auth({
-  audience: process.env.OAUTH_AUDIENCE,
-  issuerBaseURL: process.env.OAUTH_URL,
+  audience: "https://localhost:3000/api/libros",
+  issuerBaseURL: "https://process.env.OAUTH_URL",
   tokenSigningAlg: "RS256",
 });
 
