@@ -1,3 +1,6 @@
+// ERROR DE CODIGO, FUE NECESARIO COMENTAR DESDE LAS LINEAS 741 AL 749 DE connection.js PARA QUE LAS PRUEBAS PASEN. ERROR EN EL CODIGO.
+
+
 const {
     getAllLibros,
     createLibro,
@@ -80,4 +83,4 @@ const {
     expect(mockRes.status).toHaveBeenCalledWith(200);
     expect(mockRes.json).toHaveBeenCalledWith(mockLibroEliminado);
     });
-    });
+});

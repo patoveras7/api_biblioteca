@@ -1,6 +1,6 @@
 const request = require("supertest");
-const app = require("../../src/app");
-const libroModel = require("../../src/models/libroModel");
+const app = require("../../../src/app");
+const libroModel = require("../../../src/models/libroModel");
 // Mockup de Autenticación
 jest.mock("express-oauth2-jwt-bearer", () => {
 return {
@@ -10,7 +10,7 @@ requiredScopes: jest.fn().mockImplementation(() => (req, res, next) => next()),
 };
 });
 //Mockup de Mongoose
-jest.mock("../../src/models/libroModel");
+jest.mock('../../../src/models/libroModel');
 describe("Libro API", () => {
 test("GET /libros debería obtener todos los libros", async () => {
 const mockLibros = [
